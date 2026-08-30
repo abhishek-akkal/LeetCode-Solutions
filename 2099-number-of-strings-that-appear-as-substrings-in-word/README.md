@@ -43,5 +43,5 @@
 	<li><code>1 &lt;= patterns.length &lt;= 100</code></li>
 	<li><code>1 &lt;= patterns[i].length &lt;= 100</code></li>
 	<li><code>1 &lt;= word.length &lt;= 100</code></li>
-	<li><code>patterns[i]</code> and <code>word</code> consist of lowercase English letters.</li>
+	<li><code>patterns[i]</code> and <code>word</code> consist of lowercase English letters</li>
 </ul>
