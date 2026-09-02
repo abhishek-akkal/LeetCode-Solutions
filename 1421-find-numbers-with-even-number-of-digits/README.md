@@ -25,7 +25,7 @@ Only 1771 contains an even number of digits.
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><strong>Constraints</strong></p>
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 500</code></li>
