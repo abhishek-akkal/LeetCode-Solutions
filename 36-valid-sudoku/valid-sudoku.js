@@ -1,7 +1,3 @@
-/**
- * @param {character[][]} board
- * @return {boolean}
- */
 var isValidSudoku = function(board) {
     const rows = Array.from({ length: 9 }, () => new Array(10).fill(false));
     const cols = Array.from({ length: 9 }, () => new Array(10).fill(false));
