@@ -4,24 +4,23 @@
  */
 var isValid = function(s) {
     const stack = [];
-    const pairs = {
+    const map = {
         ')': '(',
         '}': '{',
         ']': '['
     };
-    
+
     for (let i = 0; i < s.length; i++) {
-        let char = s[i];
-        
-        if (pairs[char]) {
-            let topElement = stack.length > 0 ? stack.pop() : '#';
-            if (pairs[char] !== topElement) {
+        const char = s[i];
+
+        if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        } else {
+            if (stack.pop() !== map[char]) {
                 return false;
             }
-        } else {
-            stack.push(char);
         }
     }
-    
+
     return stack.length === 0;
 };
