@@ -4,16 +4,21 @@
  * @return {number}
  */
 var strStr = function(haystack, needle) {
-    const hLen = haystack.length;
-    const nLen = needle.length;
-    
-    if (nLen > hLen) return -1;
-    
-    for (let i = 0; i <= hLen - nLen; i++) {
-        if (haystack.substring(i, i + nLen) === needle) {
-            return i;
+    if (needle.length > haystack.length) return -1;
+
+    const n = haystack.length;
+    const m = needle.length;
+
+    for (let i = 0; i <= n - m; i++) {
+        let match = true;
+        for (let j = 0; j < m; j++) {
+            if (haystack[i + j] !== needle[j]) {
+                match = false;
+                break;
+            }
         }
+        if (match) return i;
     }
-    
+
     return -1;
 };
