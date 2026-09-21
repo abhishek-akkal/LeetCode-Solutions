@@ -3,21 +3,24 @@
  * @return {number}
  */
 var maxArea = function(height) {
-    let max = 0;
+    let maxWater = 0;
     let left = 0;
     let right = height.length - 1;
-    
+
     while (left < right) {
         const width = right - left;
-        const currentArea = width * Math.min(height[left], height[right]);
-        max = Math.max(max, currentArea);
-        
+        const currentHeight = Math.min(height[left], height[right]);
+        const area = width * currentHeight;
+
+        maxWater = Math.max(maxWater, area);
+
+        // Move the pointer pointing to the shorter line to potentially find a taller boundary
         if (height[left] < height[right]) {
             left++;
         } else {
             right--;
         }
     }
-    
-    return max;
+
+    return maxWater;
 };
