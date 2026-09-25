@@ -1,7 +1,3 @@
-/**
- * @param {string} columnTitle
- * @return {number}
- */
 var titleToNumber = function(columnTitle) {
     let result = 0;
     
