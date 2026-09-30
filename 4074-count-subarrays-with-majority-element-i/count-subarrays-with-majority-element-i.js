@@ -1,8 +1,3 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number}
- */
 var countMajoritySubarrays = function(nums, target) {
     let totalSubarrays = 0; 
     const n = nums.length;
