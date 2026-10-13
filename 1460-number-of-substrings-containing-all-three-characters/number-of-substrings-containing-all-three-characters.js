@@ -3,18 +3,13 @@
  * @return {number}
  */
 var numberOfSubstrings = function(s) {
-    let lastSeen = { 'a': -1, 'b': -1, 'c': -1 };
+    const last = [-1, -1, -1];
     let count = 0;
-    
+
     for (let i = 0; i < s.length; i++) {
-        lastSeen[s[i]] = i;
-        
-        let minIndex = Math.min(lastSeen['a'], lastSeen['b'], lastSeen['c']);
-        
-        if (minIndex !== -1) {
-            count += minIndex + 1;
-        }
+        last[s.charCodeAt(i) - 97] = i;
+        count += Math.min(last[0], last[1], last[2]) + 1;
     }
-    
+
     return count;
 };
