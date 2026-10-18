@@ -1,8 +1,3 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-// var img_context; 
 var maximumLength = function(nums) {
     let freq = new Map();
     for (let num of nums) {
