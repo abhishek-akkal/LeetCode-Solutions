@@ -1,23 +1,20 @@
 var getSkyline = function(buildings) {
     let events = [];
 
-    // Create start and end events
     for (let [left, right, height] of buildings) {
-        events.push([left, -height, right]); // building starts
-        events.push([right, 0, 0]);          // building ends
+        events.push([left, -height, right]); 
+        events.push([right, 0, 0]);          
     }
 
-    // Sort events
     events.sort((a, b) => {
         if (a[0] !== b[0]) return a[0] - b[0];
         return a[1] - b[1];
     });
 
     let result = [];
-    let heap = [[0, Infinity]]; // [height, end]
+    let heap = [[0, Infinity]]; 
     let prevHeight = 0;
 
-    // Max heap helper functions
     const push = (item) => {
         heap.push(item);
         let i = heap.length - 1;
