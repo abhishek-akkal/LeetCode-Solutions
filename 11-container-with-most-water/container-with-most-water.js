@@ -1,7 +1,3 @@
-/**
- * @param {number[]} height
- * @return {number}
- */
 var maxArea = function(height) {
     let maxWater = 0;
     let left = 0;
@@ -14,7 +10,6 @@ var maxArea = function(height) {
 
         maxWater = Math.max(maxWater, area);
 
-        // Move the pointer pointing to the shorter line to potentially find a taller boundary
         if (height[left] < height[right]) {
             left++;
         } else {
