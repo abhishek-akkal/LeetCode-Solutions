@@ -1,7 +1,3 @@
-/**
- * @param {number[][]} matrix
- * @return {number[]}
- */
 var spiralOrder = function(matrix) {
     const result = [];
     if (matrix.length === 0) return result;
