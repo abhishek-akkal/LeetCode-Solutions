@@ -1,9 +1,9 @@
 <h2><a href="https://leetcode.com/problems/sqrtx">Sqrt(x)</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given a non-negative integer <code>x</code>, return <em>the square root of </em><code>x</code><em> rounded down to the nearest integer</em>. The returned integer should be <strong>non-negative</strong> as well.</p>
 
-<p>You <strong>must not use</strong> any built-in exponent function or operator.</p>
+<p>You <strong>must not use</strong> any built-in exponent function or operator</p>
 
 <ul>
-	<li>For example, do not use <code>pow(x, 0.5)</code> in c++ or <code>x ** 0.5</code> in python.</li>
+	<li>For example, do not use <code>pow(x, 0.5)</code> in c++ or <code>x ** 0.5</code> in python</li>
 </ul>
 
 <p>&nbsp;</p>
