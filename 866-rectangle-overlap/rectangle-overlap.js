@@ -1,8 +1,3 @@
-/**
- * @param {number[]} rec1
- * @param {number[]} rec2
- * @return {boolean}
- */
 var isRectangleOverlap = function(rec1, rec2) {
     
     const xOverlap = rec1[0] < rec2[2] && rec2[0] < rec1[2];
