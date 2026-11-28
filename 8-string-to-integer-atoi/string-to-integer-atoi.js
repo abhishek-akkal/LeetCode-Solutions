@@ -1,7 +1,3 @@
-/**
- * @param {string} s
- * @return {number}
- */
 var myAtoi = function(s) {
     let i = 0;
     let sign = 1;
